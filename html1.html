@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <link rel="icon" href="pv logo.png" type="image/icon type">
+    <title>PhongVu.vn | Laptop, PC, </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  </head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<style>
+    img {
+    object-fit: contain;
+    text-align:center;
+  }
+
+    .logo{
+    height:35px;
+    margin-top:15px;
+    margin-bottom:15px;
+    margin-right:15px;
+    margin-left:75px;
+    }
+
+    .search{
+      height:38px;
+      display:inline-block;
+    }
+
+    .search-input{
+      display: block;
+      width: 480px;
+      height:45px;
+      border-radius: 10px;
+      padding: 0.375rem 0.75rem;
+      min-height: 16px;
+      border: 0px;
+      background-color: rgb(244, 244, 244); 
+      flex: 1 1 0%;
+    }
+
+    .sign{
+      width:40px;
+      height:40px;
+      margin-left:50px;
+    }
+
+    .Login{
+      margin-left:20px;
+      margin-top:5px;
+      color:rgb(85, 85, 232)
+    }
+
+    .mua{
+      margin-left:20px;
+      margin-top:5px;
+      color:rgb(85, 85, 232)
+    }
+
+    .bell{
+      margin-left:50px;
+      width:42px;
+      height:42px;
+    }
+
+    .cart{
+      margin-left:50px;
+      width:40px;
+      height:40px;
+    }
+
+
+    #content{
+      width:20px;
+      height:20px;
+      float:left;
+    }
+
+    .text{
+      margin-top:15px;
+      font-size: 13px;
+
+    }
+
+    ul {
+  list-style-type: none;
+  width: 200px;
+  background-color: #ffffff;
+
+}
+
+    li a {
+    display: block;
+    color: #000;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: rgb(241, 240, 240);
+  
+}
+
+ul{
+  margin-bottom:100px;
+  position:top left;
+  border-radius: 10px;
+  height:500px;
+  width:240px;
+}
+
+
+#carouselId{
+  position: absolute;
+  z-index: 0;
+}
+
+.san-pham{
+  position:absolute;
+  z-index: 5;
+  margin-left:20px;
+}
+
+.parent-container{
+  position:relative;
+}
+
+
+
+
+.laptop-list{
+  visibility:hidden;
+  position: absolute;
+  margin-left:160px; 
+  margin-top:-16px;
+  border-radius: 0px;
+}
+
+
+.laptop:hover .laptop-list{
+  visibility: visible;
+}
+
+.laptop-card{
+  margin-top:820px;   
+  margin-right:100px;
+  /* width:250px; */
+}
+
+.pc-card{
+  margin-top:-400px; 
+  margin-right:100px;
+  /* width:250px; */
+}
+
+.giamgia {
+    height: 36px;
+    line-height: 12px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA5NiA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iOTYiIGhlaWdodD0iNDAiIHJ4PSI0IiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXIpIiAvPgogIDxtYXNrIGlkPSJtYXNrMCIgbWFzay10eXBlPSJhbHBoYSIgbWFza1VuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeD0iMCIgeT0iMCIgd2lkdGg9Ijk2IiBoZWlnaHQ9IjQwIj4KICAgIDxyZWN0IHdpZHRoPSI5NiIgaGVpZ2h0PSI0MCIgcng9IjQiIGZpbGw9IndoaXRlIiAvPgogIDwvbWFzaz4KICA8ZyBtYXNrPSJ1cmwoI21hc2swKSI+CiAgICA8cGF0aCBvcGFjaXR5PSIwLjMiCiAgICAgIGQ9Ik03NC4yNDQ2IC05LjAyODY5TDY1Ljg3NjcgOC45MTYyMUw3MC43NzA4IDExLjE5ODNMNjMuOTI0NCAyNS44ODA1TDg0LjQ3MjQgMTEuNjI5M0w3Ny45NDcgOC41ODY0Mkw5MC41NTgxIC0xLjQyMTU2TDc0LjI0NDYgLTkuMDI4NjlaIgogICAgICBmaWxsPSIjMUIxRDI5IiAvPgogIDwvZz4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhciIgeDE9IjM1LjcyMDkiIHkxPSIxLjY2NTQ0ZS0wNiIgeDI9IjU3Ljg4ODYiIHkyPSI0MC4wODczIgogICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNBQTIwRkYiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzQxM0VGRiIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgo8L3N2Zz4=) 0% 0% / cover no-repeat;
+    background-repeat: no-repeat;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    width:100px;
+    margin-top:-50px;
+    margin-right:50px;
+    position: relative;
+}
+
+.tietkiem {
+    font-size: 10px;
+    font-weight: 700;
+    color: rgb(255, 213, 145);
+}
+
+.giatietkiem {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.laptop-title{
+  color:grey;
+  font-size:15px;
+}
+
+.laptop-text{ 
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1rem;
+    display: inline;
+}
+
+.price{
+    color: rgb(20, 53, 195);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.origin-price{
+  margin: 0px 0.25rem 0px 0px;
+    padding: 0px;
+    border-style: none;
+    border-width: 1px;
+    border-color: unset;
+    opacity: 1;
+    color: rgb(130, 134, 158);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: unset;
+    max-width: unset;
+    min-width: unset;
+    transition: color 0.3s ease 0s;
+    text-decoration: line-through;
+}
+
+.percent-off{
+  margin: 0px;
+    padding: 0px;
+    border-style: none;
+    border-width: 1px;
+    border-color: unset;
+    opacity: 1;
+    color: rgb(20, 53, 195);
+    font-weight: 400;
+    text-decoration: unset;
+    font-size: 12px;
+    line-height: 16px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: unset;
+    max-width: unset;
+    min-width: unset;
+    transition: color 0.3s ease 0s;
+}
+
+.background-laptop{
+  position: absolute; 
+  top: 0px;
+  margin-top:750px;
+  margin-left:-190px;
+  width:1800px;
+}
+
+.card-group{
+  display: flex;
+}
+
+
+</style>
+
+<nav class="navbar navbar-expand-sm navbar-white bg-white">
+    <a class="navbar-brand" href="#"></a>
+    <img class="logo" src="phongvulogo.png">
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <form class="form-inline my- my-lg-0">
+            <input class="search-input" placeholder="Nhập từ khoá cần tìm" role="searchbox" aria-label="Search" value="">
+            <img class="search" src="search.png">
+        </form>
+        <!-- Login -->
+        <a href="https://phongvu.vn/login?challenge=cfd56ba55cee44769032124ccf8ffa52"><img class="sign" src="blue-man.png"></a>
+      <a href="https://phongvu.vn/login?challenge=cfd56ba55cee44769032124ccf8ffa52"><div class="Login">
+        <h6>Đăng Nhập</h6>
+        <h6 class="dangky">Đăng Ký</h6>
+      </div></a>
+      <!-- notifications -->
+      <img class="bell" src="notification.png">
+      <!-- shopping cart -->
+        <a href="https://phongvu.vn/cart"><img class="cart" src="cart.png"></a>
+      <a href="https://phongvu.vn/cart"><div class="mua">
+        <h6>Giỏ hàng của bạn</h6>
+        <h6 class="dangky">Sản phẩm</h6>
+      </div></a>
+
+    </div>
+</nav>
+
+<div class="parent_container">
+  <div class="san-pham">
+    <ul>  
+
+    <div class="laptop">
+      <b><li><a><img id="content" src="laptop.png">
+      <h6 class="text"> |Laptop<ul class="laptop-list">
+      <b><span style="color:rgb(85, 85, 232)"><li class="text">Laptop theo thương hiệu</li></span></b>
+      <li class="text">Apple (Macbook)</li>
+      <li class="text">Acer</li>
+      <li class="text">ASUS</li>
+      <li class="text">Dell</li>
+      <li class="text">HP</li>
+      <li class="text">Lenovo</li>
+      <li class="text">LG</li>
+      <li class="text">MSI</li>
+      <li class="text">Huawei</li>
+      <li class="text">Gigabyte</li>
+    </ul></h6></li></a></b>
+    </div>
+    
+    
+      
+
+  
+    <b><li><a> <img id="content" src="apple.png">
+      <h6 class="text"> |Sản phẩm Apple</h6></li></a></b>
+  
+    <b><li><a><img id="content" src="wash-machine.png">
+      <h6 class="text"> |Điện máy-Điện gia dụng</h6></li></a></b>
+  
+    <b><li><a><img id="content" src="pc.png">
+      <h6 class="text"> |PC-Máy tính bộ</h6></li></a></b>
+  
+    <b><li><a>  <img id="content" src="computer.png">
+      <h6 class="text"> |PC-Máy hình máy tính</h6></li></a></b>
+  
+    <b><li><a>  <img id="content" src="motherboard.png">
+      <h6 class="text"> |PC-Linh kiện máy tính</h6></li></a></b>
+  
+    <b><li><a>  <img id="content" src="accesories.png">  
+      <h6 class="text"> |PC-Phụ Khiện</h6></li></a></b>
+  
+    <b><li><a>  <img id="content" src="game.png">
+      <h6 class="text"> |Game & Stream</h6></li></a></b>
+  
+    <b><li><a>  <img id="content" src="phone.png">
+      <h6 class="text"> |Điện thoại & phụ kiện</h6></li></a></b>
+  
+    <b><li><a>  <img id="content" src="camera.png">
+      <h6 class="text"> |Máy ảnh- Máy quay phim</h6></li></a></b>
+  
+    <b><li><a><img id="content" src="headphones.png">
+      <h6 class="text"> |Thiết bị âm thanh</h6></li></a></b>
+  
+    <b><li><a> <img id="content" src="light bulb.png">
+      <h6 class="text"> |Thiết bị thông minh</h6></li></a></b>
+  
+    <b><li><a><img id="content" src="printer.png">
+        <h6 class="text"> |Thiết bị văn phòng</h6></li></a></b>
+  
+    <b><li><a> <img id="content" src="stock.png">
+      <h6 class="text"> |Giải pháp doanh nghiệp</h6></li></a></b>
+    </ul>
+  </div>
+
+  <div id="carouselId" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselId" data-slide-to="1"></li>
+      <li data-target="#carouselId" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <img class="carousel-image" src="https://lh3.googleusercontent.com/SQ1sFzGsSaUtB52h4L30QNQh2ZprwZMA7h6Xktv7QGUfoJq0rpivHrFiKiDv4gNrBzj3msNg0AnbeXFeU1E0Z0Gkg552vitX=w1920-rw" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="carousel-image" src="https://lh3.googleusercontent.com/y47daGNXi4AdtyskUH2x0_Dr5Ng_EC-NBqEdKukdV5HWC8mhCapOHQhslMYAGq8U7AeJx_rcEf8mpaJZndUx7zX-RQAe-K4KSQ=w1920-rw" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="carousel-image" src="https://lh3.googleusercontent.com/MgUEMZPMSNa92CZnC50UZk63653FkpJY0XWSS2zOubhq2-Q2yURizOh4cSptPrupaWbFB6YHBIgB3t4XGmZIQHY3-cNxEpxxCQ=w1920-rw" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+</div>
+
+<br>
+
+
+<img src="https://lh3.googleusercontent.com/qQRUNsVsqzzgcuxqLgiRtPGTEv3RW8GkNQjpDgxRlDmst2I0aAmnOpUtiTFXPuRKjtp5jbZte5GDf7jb6IdTjMCxkjDpfGLuOw=w1232" width="100%" height="100%" class="background-laptop">
+
+
+
+
+<div class="laptop-card">
+<div class="card-group">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+
+        <div class="card">
+          <img class="card-img-top" src="acer.webp" alt="">
+
+            <div class="giamgia">
+            <div class="tietkiem">TIẾT KIỆM</div>
+            <div class="giatietkiem">2.500.000&nbsp;đ</div>
+            </div>
+
+            <div class="card-body">
+            <h4 class="laptop-title" >ACER</h4>
+            <h3 class="laptop-text">Laptop ACER Aspire 7 A715-42G-R05G (Ryzen...)
+            </h3>
+
+            <div class="price">17.990.000&nbsp;đ</div>
+            <div class="origin-price">20.490.000&nbsp;đ</div>
+            <div class="percent-off">-12.2%</div>
+
+           
+            </div>
+        </div>
+
+      </div>
+
+      <div class="col-sm">
+        
+        <div class="card">
+          <img class="card-img-top" src="msi modern 15.webp" alt="">
+
+            <div class="giamgia">
+            <div class="tietkiem">TIẾT KIỆM</div>
+            <div class="giatietkiem">2.300.000&nbsp;đ</div>
+            </div>
+
+            <div class="card-body">
+            <h4 class="laptop-title" >  MSI</h4>
+            <h3 class="laptop-text">Laptop MSI Modern 15 A11M (i5-1155G7/RAM...
+            </h3>
+
+            <div class="price">14.690.000&nbsp;đ</div>
+            <div class="origin-price">16.990.000&nbsp;đ</div>
+            <div class="percent-off">-13.54%</div>
+
+            </div>
+        </div>
+
+      </div>
+
+      <div class="col-sm">
+        
+        <div class="card">
+          <img class="card-img-top" src="hp 15.webp" alt="">
+
+
+            <div class="card-body">
+            <h4 class="laptop-title" >HP</h4>
+            <h3 class="laptop-text">Laptop HP 15s-fq5079TU (i5-1235U/RAM...
+            </h3>
+
+            <div class="price">17.890.000&nbsp;đ</div>
+
+            </div>
+        </div>  
+
+      </div>
+
+      <div class="col-sm">
+        
+        <div class="card">
+          <img class="card-img-top" src="asus tuf.webp" alt="">
+
+            <div class="giamgia">
+            <div class="tietkiem">TIẾT KIỆM</div>
+            <div class="giatietkiem">3.000.000&nbsp;đ</div>
+            </div>
+
+            <div class="card-body">
+            <h4 class="laptop-title" >ASUS</h4>
+            <h3 class="laptop-text">Laptop Asus TUF Gaming A15 FA506IHRB-HN080W
+            </h3>
+
+            <div class="price">16.990.000&nbsp;đ</div>
+            <div class="origin-price">19.990.000&nbsp;đ</div>
+            <div class="percent-off">-15.01%</div>
+
+            </div>
+        </div>
+
+      <div class="col-sm">
+        
+        <div class="card">
+          <img class="card-img-top" src="asus vivo.webp" alt="">
+
+            <div class="giamgia">
+            <div class="tietkiem">TIẾT KIỆM</div>
+            <div class="giatietkiem">4.200.000&nbsp;đ</div>
+            </div>
+
+            <div class="card-body">
+            <h4 class="laptop-title" >ASUS</h4>
+            <h3 class="laptop-text">Laptop ASUS Vivobook X515EA-BQ2351W (i3-1115G4/RAM...
+            </h3>
+
+            <div class="price">9.790.000&nbsp;đ</div>
+            <div class="origin-price">13.990.000&nbsp;đ</div>
+            <div class="percent-off">-30.02%</div>
+
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+<img src="https://lh3.googleusercontent.com/3irRhUqlyWFPVMVYs_eHaIiPXyKSSCLvsMcW-Z2upFyMd5vB8lt8KE1_0MBTvrlBrrALBkkH6ktI4eurtRnAdoQUhCjPuUaM=w1232"
+ width="100%" height="100%" class="pc-background">
+
+
+
+<div class="pc-card">
+<div class="card-group">    
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+
+        <div class="card">
+          <img class="card-img-top" src="kingston.webp" alt="">
+
+            <div class="giamgia">
+            <div class="tietkiem">TIẾT KIỆM</div>
+            <div class="giatietkiem">110.000&nbsp;đ</div>
+            </div>
+
+            <div class="card-body">
+            <h4 class="laptop-title" >KINGSTON</h4>
+            <h3 class="laptop-text">Ổ cứng SSD Kingston A400 240GB Sata...</h3>
+            
+
+            <div class="price">779.000&nbsp;đ</div>
+            <div class="origin-price">889.000&nbsp;đ</div>
+            <div class="percent-off">-12.37%</div>
+
+           
+            </div>
+        </div>
+
+      </div>
+
+      <div class="col-sm">
+        
+        <div class="card">
+          <img class="card-img-top" src="gaming pc 30046.webp" alt="">
+
+            <div class="giamgia">
+            <div class="tietkiem">TIẾT KIỆM</div>
+            <div class="giatietkiem">3.000.000&nbsp;đ</div>
+            </div>
+
+            <div class="card-body">
+            <h4 class="laptop-title" >PHONG VŨ</h4>
+            <h3 class="laptop-text">PC Phong Vũ Gaming 30046 Intel Core...
+            </h3>
+
+            <div class="price">11.390.000&nbsp;đ</div>
+            <div class="origin-price">14.390.000&nbsp;đ</div>
+            <div class="percent-off">-20.85%</div>
+
+            </div>
+        </div>
+
+      </div>
+
+      <div class="col-sm">
+        
+        <div class="card">
+          <img class="card-img-top" src="gaming pc 50062.webp" alt="">
+
+            <div class="giamgia">
+            <div class="tietkiem">TIẾT KIỆM</div>
+            <div class="giatietkiem">2.200.000&nbsp;đ</div>
+            </div>
+            
+            <div class="card-body">
+            <h4 class="laptop-title" >PHONG VŨ</h4>
+            <h3 class="laptop-text">PC Phong Vũ Gaming 50062 Intel Core...
+            </h3>
+
+            <div class="price">16.290.000&nbsp;đ</div>
+            <div class="origin-price">18.490.000&nbsp;đ</div>
+            <div class="percent-off">-11.9%</div>
+
+            </div>
+        </div>  
+
+      </div>
+
+      <div class="col-sm">
+        
+        <div class="card">
+          <img class="card-img-top" src="gaming pc 30054.webp" alt="">
+
+            <div class="giamgia">
+            <div class="tietkiem">TIẾT KIỆM</div>
+            <div class="giatietkiem">1.900.000&nbsp;đ</div>
+            </div>
+
+            <div class="card-body">
+            <h4 class="laptop-title" >PHONG VŨ</h4>
+            <h3 class="laptop-text">PC Phong Vũ Office 30054 Intel Core...
+            </h3>
+
+            <div class="price">7.390.000&nbsp;đ</div>
+            <div class="origin-price">9.290.000&nbsp;đ</div>
+            <div class="percent-off">-20.45%</div>
+
+            </div>
+        </div>
+
+      <div class="col-sm">
+        
+        <div class="card">
+          <img class="card-img-top" src="gaming pc 50057.webp" alt="">
+
+            <div class="giamgia">
+            <div class="tietkiem">TIẾT KIỆM</div>
+            <div class="giatietkiem">1.900.000&nbsp;đ</div>
+            </div>
+
+            <div class="card-body">
+            <h4 class="laptop-title" >PHONG VŨ</h4>
+            <h3 class="laptop-text">PC Phong Vũ Office 50057 Intel Core i5...
+            </h3>
+
+            <div class="price">9.390.000&nbsp;đ</div>
+            <div class="origin-price">11.290.000&nbsp;đ</div>
+            <div class="percent-off">-16.83%</div>
+
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+</div>
+
+</body>
+<html>
+
+
+<!-- <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      
+      <div class="carousel-item" data-bs-interval="2000">
+        <p style="text-align:center;"><img src="dell xps 15 new.jpg"alt="..."></p>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>DELL XPS 15</h5>
+          <p>GOOD FOR EDITING AND DOING HEAVY WORK</p>
+        </div>
+      </div>
+      <div class="carousel-item active" data-bs-interval="10000">
+        <p style="text-align:center;"><img src="asus.jpg"  alt="..."></p>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Zephyrus G14</h5>
+          <p>GOOD FOR GAMING</p>
+        </div>
+      </div>
+      <div class="carousel-item" >
+        <p style="text-align:center;" ><img src="razer blade.jpg" alt="..."></p>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>RAZER STEALTH BLADE 15</h5>
+          <p>BEST OF BOTH WORLDS. GAMING/WORKING</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container text-center">
+    <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="asus.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3>ZEPHYRUS G14</h3>
+              <p class="card-text">THIS IS THE ZEPHYRUS G14 BY ASUS. AN ABSOLUTE BEAST IN ALL CRITERIA, GAMING AND WORKING</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="dell xps 15 new.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3>XPS 15</h3>
+              <p class="card-text">WE ALL KNOW IT, WE ALL LOVE IT.THIS IS THE NEWEST DELL XPS 15 MODEL. THIS WORK HORSE WILL HELP YOU POWER THROUGH YOUR WORK</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="razer blade.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3>STEALTH BLADE 15</h3>
+                <p class="card-text">THIS IS RAZER MOST KNOWN LAPTOP. IF YOU WANT A LAPTOP THAT CAN BOTH WORK AND PLAY. THIS IS THE PERFECT CHOICE FOR YOU!</p>
+              </div>
+            </div>
+          </div>
+
+    </div>
+</div>
+
+<nav aria-label="Page navigation">
+  <ul class="pagination pagination-lg justify-content-left">
+    <li class="page-item active">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+        <span class="sr-only">Previous</span>
+      <a>
+    </li>
+    <li class="page-item active"><a class="page-link" href="html1.html">1</a></li>
+    <li class="page-item"><a class="page-link" href="html2.html">2</a></li>
+    <li class="page-item"><a class="page-link" href="html3.html">3</a></li>
+    <li class="page-item"><a class="page-link" href="html4.html">4</a></li>
+    <li class="page-item"><a class="page-link" href="html5.html">5</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+        <span class="sr-only">Next</span>
+      </a>
+    </li>   
+  </ul>
+</nav>
+
+
+<nav class="breadcrumb">
+    <a class="breadcrumb-item" href="https://www.google.com/search?client=opera-gx&q=pagination&sourceid=opera&ie=UTF-8&oe=UTF-8">Pagination</a>
+    <a class="breadcrumb-item" href="#">Nothing here</a>
+    <span class="breadcrumb-item active"></span>
+</nav> -->
+
