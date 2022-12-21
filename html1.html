@@ -153,17 +153,6 @@ ul{
   visibility: visible;
 }
 
-.laptop-card{
-  margin-top:820px;   
-  margin-right:100px;
-  /* width:250px; */
-}
-
-.pc-card{
-  margin-top:-400px; 
-  margin-right:100px;
-  /* width:250px; */
-}
 
 .giamgia {
     height: 36px;
@@ -259,12 +248,16 @@ ul{
   position: absolute; 
   top: 0px;
   margin-top:750px;
-  margin-left:-190px;
-  width:1800px;
+  width:100%;
+  height:100%;
+  
 }
 
-.card-group{
+.container{
   display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 
@@ -311,6 +304,49 @@ ul{
 .thuonghieutext{
   margin-top:50px;
 }
+
+.container {
+        display: block;
+        width: 100%;   
+      }
+      
+      .card {
+        border: 1px solid black;
+        width:230px;
+        height:400px;
+        margin-top:850px;
+        margin-left:5px;
+        float:left;
+      } 
+
+      .pc-container{
+        position:relative;
+        display: block;
+        width: 100%;   
+      }
+
+      .pc-card{
+        margin-top:600px; 
+        border: 1px solid black;
+        width:230px;
+        height:400px;
+        margin-left:5px;
+        float:left;
+        /* position:relative; */
+      }
+
+      .pc-background{
+        margin-top:1400px;
+        margin-left:-1400px;
+        position: absolute; 
+        top: 0px;
+        width:1600px;
+        position: absolute; 
+      }
+
+
+
+
 
 </style>
 
@@ -446,21 +482,17 @@ ul{
 
 
 
-<div class="laptop-card">
-<div class="card-group">
   <div class="container">
-    <div class="row">
-      <div class="col-sm">
-
+  
         <div class="card">
           <img class="card-img-top" src="acer.webp" alt="">
 
-            <div class="giamgia">
+          <div class="giamgia">
             <div class="tietkiem">TIẾT KIỆM</div>
             <div class="giatietkiem">2.500.000&nbsp;đ</div>
-            </div>
+          </div>
 
-            <div class="card-body">
+          <div class="card-body">
             <h4 class="laptop-title" >ACER</h4>
             <h3 class="laptop-text">Laptop ACER Aspire 7 A715-42G-R05G (Ryzen...)
             </h3>
@@ -470,12 +502,9 @@ ul{
             <div class="percent-off">-12.2%</div>
 
            
-            </div>
+          </div>
         </div>
-
-      </div>
-
-      <div class="col-sm">
+      
         
         <div class="card">
           <img class="card-img-top" src="msi modern 15.webp" alt="">
@@ -496,10 +525,9 @@ ul{
 
             </div>
         </div>
+        </div>
 
-      </div>
 
-      <div class="col-sm">
         
         <div class="card">
           <img class="card-img-top" src="hp 15.webp" alt="">
@@ -514,10 +542,8 @@ ul{
 
             </div>
         </div>  
+        </div>
 
-      </div>
-
-      <div class="col-sm">
         
         <div class="card">
           <img class="card-img-top" src="asus tuf.webp" alt="">
@@ -538,8 +564,8 @@ ul{
 
             </div>
         </div>
-
-      <div class="col-sm">
+        </div>
+        
         
         <div class="card">
           <img class="card-img-top" src="asus vivo.webp" alt="">
@@ -560,6 +586,7 @@ ul{
 
             </div>
         </div>
+        </div>
 
       </div>
     </div>
@@ -574,40 +601,31 @@ ul{
 <img src="https://lh3.googleusercontent.com/3irRhUqlyWFPVMVYs_eHaIiPXyKSSCLvsMcW-Z2upFyMd5vB8lt8KE1_0MBTvrlBrrALBkkH6ktI4eurtRnAdoQUhCjPuUaM=w1232"
  width="100%" height="100%" class="pc-background">
 
-
-
-<div class="pc-card">
-<div class="card-group">    
   <div class="container">
-    <div class="row">
-      <div class="col-sm">
 
-        <div class="card">
+        <div class="pc-card">
           <img class="card-img-top" src="kingston.webp" alt="">
 
             <div class="giamgia">
-            <div class="tietkiem">TIẾT KIỆM</div>
-            <div class="giatietkiem">110.000&nbsp;đ</div>
+              <div class="tietkiem">TIẾT KIỆM</div>
+              <div class="giatietkiem">110.000&nbsp;đ</div>
             </div>
 
             <div class="card-body">
-            <h4 class="laptop-title" >KINGSTON</h4>
-            <h3 class="laptop-text">Ổ cứng SSD Kingston A400 240GB Sata...</h3>
+              <h4 class="laptop-title" >KINGSTON</h4>
+              <h3 class="laptop-text">Ổ cứng SSD Kingston A400 240GB Sata...</h3>
             
 
-            <div class="price">779.000&nbsp;đ</div>
-            <div class="origin-price">889.000&nbsp;đ</div>
-            <div class="percent-off">-12.37%</div>
-
-           
+              <div class="price">779.000&nbsp;đ</div>
+              <div class="origin-price">889.000&nbsp;đ</div>
+              <div class="percent-off">-12.37%</div>
             </div>
         </div>
 
-      </div>
+      
 
-      <div class="col-sm">
         
-        <div class="card">
+        <div class="pc-card">
           <img class="card-img-top" src="gaming pc 30046.webp" alt="">
 
             <div class="giamgia">
@@ -629,9 +647,8 @@ ul{
 
       </div>
 
-      <div class="col-sm">
         
-        <div class="card">
+        <div class="pc-card">
           <img class="card-img-top" src="gaming pc 50062.webp" alt="">
 
             <div class="giamgia">
@@ -653,9 +670,8 @@ ul{
 
       </div>
 
-      <div class="col-sm">
         
-        <div class="card">
+        <div class="pc-card">
           <img class="card-img-top" src="gaming pc 30054.webp" alt="">
 
             <div class="giamgia">
@@ -675,9 +691,9 @@ ul{
             </div>
         </div>
 
-      <div class="col-sm">
+
         
-        <div class="card">
+        <div class="pc-card">
           <img class="card-img-top" src="gaming pc 50057.webp" alt="">
 
             <div class="giamgia">
